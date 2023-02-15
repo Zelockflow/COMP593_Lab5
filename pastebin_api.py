@@ -37,7 +37,6 @@ def post_new_paste(title, body_text, expiration='10M', listed=False):
     else:
         print('Failed')
         print(f'Staus code: {resp_msg.status_code} ({resp_msg.reason})')
-    return
 
 if __name__ == '__main__':
     main()
