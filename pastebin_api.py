@@ -11,8 +11,8 @@ def main():
 def post_new_paste(title, body_text, expiration='10M', listed=False):
     """Posts a new public paste to PasteBin
 
-    Args:
-        title (str): paste tietle
+     Args:
+        title (str): paste title
         body_text (str): Paste body text
         expiration (str, optional): Expiration date of paste(N = never 10M = minutes, 1H, 1D, 1W,2W,1M,6M,1Y) Default
         listed (bool, optional): Whether paste is publicly listed (true) or not (False). Defaults to False.
@@ -20,6 +20,7 @@ def post_new_paste(title, body_text, expiration='10M', listed=False):
     Returns:
         str: URL of the new paste, if succeful. None unsuccessful.
     """
+    
     paste_params = {
         'api_dev_key': DEVELOPER_KEY,
         'api_option': 'paste',
